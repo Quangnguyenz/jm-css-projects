@@ -358,4 +358,12 @@ main {
 
 .random-btn {
   margin-top: 0.75rem;
+  background: var(--primary-100);
+  color: var(--primary-500);
+  border: 2px solid var(--primary-500);
+}
+
+.random-btn:hover {
+  background: var(--primary-500);
+  color: var(--black);
 }
