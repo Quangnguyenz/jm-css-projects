@@ -299,6 +299,11 @@ Sidebar
   grid-template-rows: auto 1fr auto;
   box-shadow: var(--shadow-2);
   transition: var(--transition);
+  transform: translateX(-100%);
+}
+
+.show-sidebar {
+  transform: translateX(0);
 }
 
 @media screen and (min-width: 676px) {
@@ -331,5 +336,35 @@ Sidebar
   height: 40px;
 }
 
-.links {
+.links a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  color: var(--grey-500);
+  transition: var(--transition);
+}
+
+.links a:hover {
+  background: var(--primary-300);
+  color: var(--primary-600);
+  padding-left: 1.75rem;
+}
+
+.social-icons {
+  display: flex;
+  padding-bottom: 2rem;
+  justify-content: center;
+  gap: 0 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  /* margin: 0 0.5rem; */
+  color: var(--primary-500);
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  color: var(--primary-300);
 }
