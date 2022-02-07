@@ -278,6 +278,13 @@ Modal
   inset: 0;
   display: grid;
   place-items: center;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
 }
 
 .modal-container {
