@@ -288,3 +288,62 @@ Grocery Bud
 .grocery-form .form-row {
   display: flex;
 }
+
+.grocery-form .form-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.submit-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100px;
+}
+
+.grocery-container {
+  margin-top: 2rem;
+}
+
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+  padding: 0.25rem;
+  border-radius: var(--borderRadius);
+  text-transform: capitalize;
+  color: var(--grey-700);
+}
+
+.grocery-item:hover {
+  color: var(--grey-500);
+  background: var(--grey-100);
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.edit-btn {
+  color: var(--green-dark);
+}
+
+.delete-btn {
+  color: var(--red-dark);
+}
+
+.clear-btn {
+  color: var(--red-dark);
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  background: transparent;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  border: transparent;
+}
